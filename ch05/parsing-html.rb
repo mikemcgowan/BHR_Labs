@@ -13,12 +13,12 @@
 #
 require 'nokogiri'
 
-html = Nokogiri::HTML.parse(open("index.html"))
+html = Nokogiri::HTML.parse(open('index.html'))
 
 puts "[+] Title: #{html.title}"
 book = html.css('/html/body/ul/span/li').map do |mod|
   mod_name = mod.css('strong').text
   chp_name = mod.css('ul/li/div').map(&:text)
-  {mod_name => chp_name}
+  { mod_name => chp_name }
 end
 pp book
