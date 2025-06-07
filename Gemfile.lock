@@ -1,0 +1,19 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    colorize (1.1.0)
+    htmlentities (4.3.4)
+    nokogiri (1.18.8-x86_64-linux-gnu)
+      racc (~> 1.4)
+    racc (1.8.1)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  colorize
+  htmlentities
+  nokogiri
+
+BUNDLED WITH
+   2.6.7
